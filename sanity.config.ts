@@ -7,11 +7,11 @@ import { table } from "@sanity/table";
 import { projectId, dataset } from "./lib/env.api";
 
 export default defineConfig({
-  name: "victoreke",
-  title: "victoreke.com",
+  name: "morganopeyemi",
+  title: "ninotech.com.ng",
   basePath: "/studio",
-  projectId,
-  dataset,
+  projectId: 'zr3gsdrq',
+  dataset: 'production',
   plugins: [deskTool(), visionTool(), codeInput(), table()],
   schema: { types: schemaTypes },
 });

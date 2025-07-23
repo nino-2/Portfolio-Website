@@ -15,12 +15,12 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "Morgan Opeyemi | Software Developer",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
+    "Morgan Opeyemi is a Software Developer and Graphic Designer who is passionate about building solutions and contributing to open source communities",
+  url: "https://ninotech.com.ng",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "https://res.cloudinary.com/dqunmtrnb/image/upload/v1751964849/morgan_jzy2qp.jpg",
 };
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: "ninotech.com.ng",
     locale: "en-US",
     type: "website",
     description: options.description,

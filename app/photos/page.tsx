@@ -19,15 +19,15 @@ const images = [
 ];
 
 export const metadata: Metadata = {
-  title: "Photos | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/photos"),
-  description: "Explore photos taken by Victor Eke",
+  title: "Photos | Morgan Opeyemi",
+  metadataBase: new URL("https://ninotech.com.ng/photos"),
+  description: "Explore photos taken by Morgan Opeyemi",
   openGraph: {
-    title: "Photos | Victor Eke",
-    url: "https://victoreke.com/photos",
-    description: "Explore photos taken by Victor Eke",
+    title: "Photos | Morgan Opeyemi",
+    url: "https://ninotech.com.ng/photos",
+    description: "Explore photos taken by Morgan Opeyemi",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692635149/victoreke/photos.png",
+      "https://res.cloudinary.com/dqunmtrnb/image/upload/v1751964849/morgan_jzy2qp.jpg",
   },
 };
 
@@ -38,7 +38,7 @@ export default function Photos() {
         title="Photos"
         description="This page is still under construction..."
       />
-      <figure className="my-6">
+      {/* <figure className="my-6">
         <Slide delay={0.12} className="flex flex-wrap gap-2">
           {images.map((image) => (
             <Image
@@ -51,7 +51,7 @@ export default function Photos() {
             />
           ))}
         </Slide>
-      </figure>
+      </figure> */}
     </main>
   );
 }

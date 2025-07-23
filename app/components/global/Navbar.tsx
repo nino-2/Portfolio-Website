@@ -16,10 +16,6 @@ export default function Navbar() {
       href: "/projects",
     },
     {
-      title: "Blog",
-      href: "/blog",
-    },
-    {
       title: "Photos",
       href: "/photos",
     },

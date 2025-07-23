@@ -26,7 +26,10 @@ const project = {
       type: "slug",
       description:
         "Add a custom slug for the URL or generate one from the name",
-      options: { source: "name" },
+      options: { source: "name",
+        slugify: (input:string) =>
+        input.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "")
+       },
     },
     {
       name: "logo",
