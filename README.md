@@ -126,8 +126,8 @@ This portfolio is MIT-licensed so you are free to use it as an inspiration or yo
 [reactrefractor]: https://github.com/rexxars/react-refractor
 [site]: https://ninotech.com.ng
 [studio]: https://ninotech.com.ng/studio
-[studio-preview]: https://github.com/nino-2/Portfolio-Website/public/studio
-[site-preview]: https://github.com/nino-2/Portfolio-Website/public/site
+[studio-preview]: https://github.com/nino-2/Portfolio-Website/public/studio.png
+[site-preview]: https://github.com/nino-2/Portfolio-Website/public/site.png
 [env-example]: https://github.com/nino-2/Portfolio-Website/blob/main/.env.example
 [localhost]: http://localhost:3000
 [localhost-studio]: http://localhost:3000/studio
