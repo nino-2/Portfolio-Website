@@ -11,34 +11,20 @@ export const dataset: string = checkValue(
 );
 
 export const token = checkValue(
-  process.env.NEXT_PUBLIC_SANITY_ACCESS_TOKEN,
-  "NEXT_PUBLIC_SANITY_ACCESS_TOKEN",
+  process.env.SANITY_ACCESS_TOKEN,
+  "SANITY_ACCESS_TOKEN",
   "https://sanity.io"
 );
 
-export const hookSecret = process.env.NEXT_PUBLIC_SANITY_HOOK_SECRET;
+export const hookSecret = process.env.SANITY_HOOK_SECRET || "";
 export const mode = process.env.NODE_ENV;
 
 export const apiVersion =
   process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2023-07-21";
 
-export const giscusRepoId = checkValue(
-  process.env.NEXT_PUBLIC_GISCUS_REPOID,
-  "NEXT_PUBLIC_GISCUS_REPOID",
-  "https://giscus.app/"
-);
-
-export const giscusCategoryId = checkValue(
-  process.env.NEXT_PUBLIC_GISCUS_CATEGORYID,
-  "NEXT_PUBLIC_GISCUS_CATEGORYID",
-  "https://giscus.app/"
-);
-
-export const umamiSiteId = checkValue(
-  process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID,
-  "NEXT_PUBLIC_UMAMI_WEBSITE_ID",
-  "https://umami.is"
-);
+export const giscusRepoId = process.env.NEXT_PUBLIC_GISCUS_REPOID || "";
+export const giscusCategoryId = process.env.NEXT_PUBLIC_GISCUS_CATEGORYID || "";
+export const umamiSiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || "";
 
 // Validate env varaibles
 function checkValue<T>(

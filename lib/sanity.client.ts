@@ -3,8 +3,8 @@ import { createClient, type ClientConfig, type QueryParams } from "next-sanity";
 import { projectId, dataset, apiVersion, token, mode } from "@/lib/env.api";
 
 const config: ClientConfig = {
-  projectId: 'zr3gsdrq',
-  dataset: 'production',
+  projectId,
+  dataset,
   apiVersion,
   useCdn: mode === "development" ? true : false,
   ignoreBrowserTokenWarning: true,
