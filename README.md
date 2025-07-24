@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://victoreke.com"><img src="./public/logo.png" width="60px"></a>
+<a href="https://ninotech.com.ng"><img src="./public/logo.png" width="60px"></a>
 </div>
 
 <div align="center">
@@ -126,8 +126,8 @@ This portfolio is MIT-licensed so you are free to use it as an inspiration or yo
 [reactrefractor]: https://github.com/rexxars/react-refractor
 [site]: https://ninotech.com.ng
 [studio]: https://ninotech.com.ng/studio
-[studio-preview]: https://github.com/nino-2/Portfolio-Website/assets/62628408/a2574479-a352-4437-ba67-14bd976e48eb
-[site-preview]: https://github.com/nino-2/Portfolio-Website/assets/62628408/e84ac72f-1ba1-4c46-bfc0-2512ffa0e5fa
+[studio-preview]: https://github.com/nino-2/Portfolio-Website/public/studio
+[site-preview]: https://github.com/nino-2/Portfolio-Website/public/site
 [env-example]: https://github.com/nino-2/Portfolio-Website/blob/main/.env.example
 [localhost]: http://localhost:3000
 [localhost-studio]: http://localhost:3000/studio
