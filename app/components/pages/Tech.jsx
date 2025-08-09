@@ -1,5 +1,6 @@
 
 import { getTechnologies } from "@/lib/sanity.client";
+import Image from "next/image";
 
 export default async function TechnologiesPage() {
   const technologies = await getTechnologies();
@@ -17,7 +18,7 @@ export default async function TechnologiesPage() {
           {/* Icon + Name/Link */}
           <div className="flex items-center gap-3">
             {tech.icon && (
-              <img
+              <Image
                 src={tech.icon}
                 alt={tech.name}
                 className="w-4 h-4 object-contain flex-shrink-0"

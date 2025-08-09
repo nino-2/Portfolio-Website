@@ -1,4 +1,5 @@
 import {getTools} from "@/lib/sanity.client";
+import Image from "next/image";
 
 export default async function ToolsPage() {
   const tools = await getTools();
@@ -12,7 +13,7 @@ export default async function ToolsPage() {
             {/* Icon + Name/Link */}
             <div className="flex items-center gap-3">
               {tool.icon && (
-                <img
+                <Image
                   src={tool.icon}
                   alt={tool.name}
                   className="w-4 h-4 object-contain flex-shrink-0"
