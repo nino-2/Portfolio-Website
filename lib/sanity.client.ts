@@ -1,6 +1,7 @@
 import "server-only";
 import { createClient, type ClientConfig, type QueryParams } from "next-sanity";
 import { projectId, dataset, apiVersion, token, mode } from "@/lib/env.api";
+import { technologiesQuery, toolsQuery } from "@/lib/sanity.query";
 
 const config: ClientConfig = {
   projectId,
@@ -27,4 +28,12 @@ export async function sanityFetch<QueryResponse>({
     cache: mode === "development" ? "no-store" : "force-cache",
     next: { tags },
   });
+}
+
+export async function getTechnologies() {
+  return await client.fetch(technologiesQuery);
+}
+
+export async function getTools() {
+  return await client.fetch(toolsQuery);
 }

@@ -1,7 +1,7 @@
 import { profileQuery } from "@/lib/sanity.query";
 import type { ProfileType } from "@/types";
 import HeroSvg from "./assets/icons/HeroSvg";
-import Job from "./components/pages/Job";
+
 import Social from "./components/shared/Social";
 import { Slide } from "./animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
@@ -34,7 +34,7 @@ export default async function Home() {
         </Slide>
       </section>
       <ContributionGraph />
-      <Job />
+    
     </main>
   );
 }

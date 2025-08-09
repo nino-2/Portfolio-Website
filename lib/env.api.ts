@@ -25,6 +25,9 @@ export const apiVersion =
 export const giscusRepoId = process.env.NEXT_PUBLIC_GISCUS_REPOID || "";
 export const giscusCategoryId = process.env.NEXT_PUBLIC_GISCUS_CATEGORYID || "";
 export const umamiSiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || "";
+export const githubUsername = process.env.NEXT_PUBLIC_GITHUB_USERNAME || "nino-2";
+export const githubJoinYear = process.env.NEXT_PUBLIC_GITHUB_JOIN_YEAR || "2022";
+
 
 // Validate env varaibles
 function checkValue<T>(

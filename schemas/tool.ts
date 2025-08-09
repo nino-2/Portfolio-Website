@@ -1,7 +1,7 @@
 import { defineType } from "sanity"
 export default {
-  name: 'technology',
-  title: 'Technology',
+  name: 'tool',
+  title: 'Tool',
   type: 'document',
   fields: [
     {

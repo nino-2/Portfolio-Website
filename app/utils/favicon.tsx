@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Logo from "@/public/logo.png";
 type faviconType = {
   domain: string;
   alt: string;
@@ -22,7 +22,7 @@ export default function Favicon({ domain }: faviconType) {
   return (
     <Image
       className="mr-2"
-      src={`https://www.google.com/s2/favicons?domain=${domain}`}
+      src={Logo}
       width={17}
       height={17}
       alt={extractDomain(domain) || ""}

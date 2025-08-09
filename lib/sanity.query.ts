@@ -53,6 +53,24 @@ export const projectsQuery = groq`*[_type == "project"] | order(_createdAt desc)
   "logo": logo.asset->url,
 }`;
 
+// lib/queries.ts
+export const technologiesQuery = `
+*[_type == "technology"] | order(_createdAt desc) {
+  name,
+  url,
+  "icon": icon.asset->url,
+  description
+}
+`
+export const toolsQuery = `
+*[_type == "tool"] | order(_createdAt desc) {
+  name,
+  url,
+  "icon": icon.asset->url,
+  description
+}
+`
+
 export const singleProjectQuery = groq`*[_type == "project" && slug.current == $slug][0]{
   _id,
   name,

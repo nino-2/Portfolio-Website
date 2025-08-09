@@ -8,11 +8,15 @@ import { youtube } from "./youtube";
 import { table } from "./table";
 import blockContent from "./blockContent";
 import quiz from "./quiz";
+import technology from "./technology"
+import tool from "./tool";
 
 export const schemaTypes = [
   profile,
   job,
   project,
+  technology,
+  tool,
   post,
   author,
   heroe,

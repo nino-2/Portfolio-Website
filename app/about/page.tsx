@@ -9,7 +9,8 @@ import Heroes from "../components/pages/Heroes";
 import Usage from "../components/pages/Usage";
 import { Slide } from "../animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
-import RefLink from "../components/shared/RefLink";
+import Tech from "../components/pages/Tech";
+import ToolsPage from "../components/pages/ToolsPlatform";
 
 export const metadata: Metadata = {
   title: "About | Morgan Opeyemi",
@@ -76,7 +77,7 @@ export default async function About() {
                 )}
 
                 <div className="flex flex-col text-center gap-y-4">
-                  <div className="flex items-center gap-x-3">
+                  {/* <div className="flex items-center gap-x-3">
                     <RefLink
                       href="https://www.craft.me/s/WQpQF3jrPIodXp"
                       className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
@@ -93,7 +94,7 @@ export default async function About() {
                         aria-label="Download Resume"
                       />
                     </a>
-                  </div>
+                  </div> */}
 
                   <a
                     href={`mailto:${profile?.email}`}
@@ -109,6 +110,8 @@ export default async function About() {
         </section>
         <Slide delay={0.14}>
           <Usage />
+          <Tech  />
+          <ToolsPage/>
         </Slide>
         <Heroes />
       </div>

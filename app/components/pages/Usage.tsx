@@ -19,10 +19,10 @@ export default async function Usage() {
           to.
         </p>
       </div>
-      <PortableText
+      {/* <PortableText
         value={profile?.usage}
         components={CustomPortableTextFavicon}
-      />
+      /> */}
     </section>
   );
 }

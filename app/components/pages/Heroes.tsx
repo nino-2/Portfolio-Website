@@ -13,7 +13,7 @@ export default async function Heroes() {
 
   return (
     <section className="mt-32 max-w-5xl">
-      <Slide delay={0.17}>
+      {/* <Slide delay={0.17}>
         <h2 className="text-4xl mb-4 font-bold tracking-tight">Heroes</h2>
         <p className="dark:text-zinc-400 text-zinc-600 max-w-2xl">
           Inspired by{" "}
@@ -29,9 +29,9 @@ export default async function Heroes() {
             &quot;In no particular order&quot;
           </strong>
         </p>
-      </Slide>
+      </Slide> */}
 
-      <ul className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12 tracking-tight">
+      {/* <ul className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12 tracking-tight">
         {heroes.map((heroe) => (
           <li
             key={heroe._id}
@@ -48,7 +48,7 @@ export default async function Heroes() {
             </RefLink>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </section>
   );
 }
