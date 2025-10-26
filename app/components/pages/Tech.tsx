@@ -10,7 +10,7 @@ export default async function TechnologiesPage() {
     
     <h3 className="text-white text-2xl font-semibold mt-4 mb-4 ">Technologies</h3>
     <section className="space-y-4">
-      {technologies.map((tech) => (
+      {technologies.map((tech: any) => (
         <div
           key={tech.name}
           className="flex flex-col sm:flex-row sm:items-center sm:gap-4   pb-3"
@@ -21,7 +21,9 @@ export default async function TechnologiesPage() {
               <Image
                 src={tech.icon}
                 alt={tech.name}
-                className="w-4 h-4 object-contain flex-shrink-0"
+                width={28}
+                height={28}
+                className="object-contain flex-shrink-0"
               />
             )}
             <a

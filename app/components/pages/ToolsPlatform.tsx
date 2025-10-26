@@ -8,7 +8,7 @@ export default async function ToolsPage() {
     <>
       <h3 className="text-white text-2xl font-semibold mt-4 mb-4">Tools</h3>
       <section className="space-y-4">
-        {tools.map((tool) => (
+        {tools.map((tool:any) => (
           <div key={tool.name} className="flex flex-col sm:flex-row sm:items-center sm:gap-4 pb-3">
             {/* Icon + Name/Link */}
             <div className="flex items-center gap-3">
@@ -16,7 +16,9 @@ export default async function ToolsPage() {
                 <Image
                   src={tool.icon}
                   alt={tool.name}
-                  className="w-4 h-4 object-contain flex-shrink-0"
+                  width={28}
+                  height={28}
+                  className=" object-contain flex-shrink-0"
                 />
               )}
               <a
