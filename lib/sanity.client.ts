@@ -7,7 +7,7 @@ const config: ClientConfig = {
   projectId,
   dataset,
   apiVersion,
-  useCdn: mode === "development" ? true : false,
+  useCdn: false,
   ignoreBrowserTokenWarning: true,
   token,
   perspective: "published",
